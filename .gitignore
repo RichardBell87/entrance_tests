@@ -1,0 +1,6 @@
+*.iml
+.idea/
+.database/
+target/
+src/main/resources/templates/entity.ftl
+src/main/resources/templates/application-development.properties

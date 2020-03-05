@@ -1,0 +1,106 @@
+.add_test {
+    text-align: center;
+}
+
+.card-img {
+    min-height: 200px;
+    max-height: 200px;
+    width: auto;
+    max-width: 1000px;
+}
+
+.card-img:hover {
+    min-height: 600px;
+    max-height: 600px;
+    width: auto;
+    max-width: 1000px;
+    /*-webkit-transform: scale(2);*/
+    /*-ms-transform: scale(2);*/
+    /*transform: scale(2);*/
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+}
+
+.container_by_body {
+    min-height: 92vh;
+}
+
+.container_by_footer {
+    min-height: 5vh;
+}
+
+.creators {
+    text-align: center;
+}
+
+.entity {
+    text-align: center;
+}
+
+.introduction {
+    text-align: center;
+}
+
+.navigation {
+    text-align: center;
+}
+
+.questions_list {
+}
+
+.questions_list_empty {
+    text-align: center;
+}
+
+.questions_list_title {
+    text-align: center;
+}
+
+.search {
+    text-align: center;
+}
+
+.service {
+    text-align: left;
+}
+
+.service_in {
+    text-align: left;
+}
+
+#option200text {
+    display: none;
+}
+
+#option300text {
+    display: none;
+}
+
+#option400text {
+    display: none;
+}
+
+#option500text {
+    display: none;
+}
+
+#option600text {
+    display: none;
+}
+
+#option700text {
+    display: none;
+}
+
+#option800text {
+    display: none;
+}
+
+#option900text {
+    display: none;
+}
+
+/*.picture{*/
+/*max-height: 200px;*/
+/*}*/
