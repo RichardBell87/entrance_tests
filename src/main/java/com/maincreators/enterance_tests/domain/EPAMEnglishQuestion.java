@@ -24,8 +24,25 @@ public class EPAMEnglishQuestion {
     @Column(name = "grammarrule")
     private String grammarrule;
 
-    @Column(name = "questiontext", length = 4096)
+    @Column(name = "questiontextintroduction")
+    private String questiontextintroduction;
+
+    @Column(name = "questiontext", length = 8192)
     private String questiontext;
+
+    @Column(name = "questiontextconclusion")
+    private String questiontextconclusion;
+
+    @Column(name = "numberoftrue")
+    private String numberoftrue;
+
+    @Column(name = "option0text")
+    private String option0text;
+
+    @Pattern(regexp = "[u][n][k][n][o][w][n]|[t][r][u][e]|[f][a][l][s][e]|[p][r][o][b][a][b][l][e]",
+            message = "Attention! Was stopped attempt to add in database invalid data.")
+    @Column(name = "option0check")
+    private String option0check;
 
     @Column(name = "option1text")
     private String option1text;
@@ -113,9 +130,7 @@ public class EPAMEnglishQuestion {
     @Column(name = "authorid")
     private Integer authorid;
 
-//    @Pattern(regexp = "([2][0][1-2][0-9][\\-][0-1][0-9][\\-][0-3][0-9][\\.][0-9 A-Za-z]{8}[\\-][0-9 A-Za-z]{4}[\\-][0-9 A-Za-z]{4}[\\-][0-9 A-Za-z]{4}[\\-][0-9 A-Za-z]{12}[\\.][A-Za-zА-Яа-яЁёЄєҐґІіЇї\\s'0-9.,_%+-]{1,255}[\\.][p][n][g]|[2][0][1-2][0-9][\\-][0-1][0-9][\\-][0-3][0-9][\\.][0-9 A-Za-z]{8}[\\-][0-9 A-Za-z]{4}[\\-][0-9 A-Za-z]{4}[\\-][0-9 A-Za-z]{4}[\\-][0-9 A-Za-z]{12}[\\.][A-Za-zА-Яа-яЁёЄєҐґІіЇї\\s'0-9.,_%+-]{1,255}[\\.][j][p][g]|[2][0][1-2][0-9][\\-][0-1][0-9][\\-][0-3][0-9][\\.][0-9 A-Za-z]{8}[\\-][0-9 A-Za-z]{4}[\\-][0-9 A-Za-z]{4}[\\-][0-9 A-Za-z]{4}[\\-][0-9 A-Za-z]{12}[\\.][A-Za-zА-Яа-яЁёЄєҐґІіЇї\\s'0-9.,_%+-]{1,255}[\\.][b][m][p]|[2][0][1-2][0-9][\\-][0-1][0-9][\\-][0-3][0-9][\\.][0-9 A-Za-z]{8}[\\-][0-9 A-Za-z]{4}[\\-][0-9 A-Za-z]{4}[\\-][0-9 A-Za-z]{4}[\\-][0-9 A-Za-z]{12}[\\.][A-Za-zА-Яа-яЁёЄєҐґІіЇї\\s'0-9.,_%+-]{1,255}[\\.][g][i][f]|[2][0][1-2][0-9][\\-][0-1][0-9][\\-][0-3][0-9][\\.][0-9 A-Za-z]{8}[\\-][0-9 A-Za-z]{4}[\\-][0-9 A-Za-z]{4}[\\-][0-9 A-Za-z]{4}[\\-][0-9 A-Za-z]{12}[\\.][A-Za-zА-Яа-яЁёЄєҐґІіЇї\\s'0-9.,_%+-]{1,255}[\\.][r][a][w]|[2][0][1-2][0-9][\\-][0-1][0-9][\\-][0-3][0-9][\\.][0-9 A-Za-z]{8}[\\-][0-9 A-Za-z]{4}[\\-][0-9 A-Za-z]{4}[\\-][0-9 A-Za-z]{4}[\\-][0-9 A-Za-z]{12}[\\.][A-Za-zА-Яа-яЁёЄєҐґІіЇї\\s'0-9.,_%+-]{1,255}[\\.][t][i][f][f]|[2][0][1-2][0-9][\\-][0-1][0-9][\\-][0-3][0-9][\\.][0-9 A-Za-z]{8}[\\-][0-9 A-Za-z]{4}[\\-][0-9 A-Za-z]{4}[\\-][0-9 A-Za-z]{4}[\\-][0-9 A-Za-z]{12}[\\.][A-Za-zА-Яа-яЁёЄєҐґІіЇї\\s'0-9.,_%+-]{1,255}[\\.][p][s][d]|[2][0][1-2][0-9][\\-][0-1][0-9][\\-][0-3][0-9][\\.][0-9 A-Za-z]{8}[\\-][0-9 A-Za-z]{4}[\\-][0-9 A-Za-z]{4}[\\-][0-9 A-Za-z]{4}[\\-][0-9 A-Za-z]{12}[\\.][A-Za-zА-Яа-яЁёЄєҐґІіЇї\\s'0-9.,_%+-]{1,255}[\\.][j][p][2]|[2][0][1-2][0-9][\\-][0-1][0-9][\\-][0-3][0-9][\\.][0-9 A-Za-z]{8}[\\-][0-9 A-Za-z]{4}[\\-][0-9 A-Za-z]{4}[\\-][0-9 A-Za-z]{4}[\\-][0-9 A-Za-z]{12}[\\.][A-Za-zА-Яа-яЁёЄєҐґІіЇї\\s'0-9.,_%+-]{1,255}[\\.][w][e][b][p]|[2][0][1-2][0-9][\\-][0-1][0-9][\\-][0-3][0-9][\\.][0-9 A-Za-z]{8}[\\-][0-9 A-Za-z]{4}[\\-][0-9 A-Za-z]{4}[\\-][0-9 A-Za-z]{4}[\\-][0-9 A-Za-z]{12}[\\.][A-Za-zА-Яа-яЁёЄєҐґІіЇї\\s'0-9.,_%+-]{1,255}[\\.][s][v][g])",
-//            message = "Image files only, maximum file name length <= 255 characters")
-    @Column (name = "filename")
+    @Column(name = "filename")
     private String filename;
 
     public EPAMEnglishQuestion() {
@@ -124,7 +139,12 @@ public class EPAMEnglishQuestion {
     public EPAMEnglishQuestion(String company,
                                String subject,
                                String grammarrule,
+                               String questiontextintroduction,
                                String questiontext,
+                               String questiontextconclusion,
+                               String numberoftrue,
+                               String option0text,
+                               String option0check,
                                String option1text,
                                String option1check,
                                String option2text,
@@ -151,7 +171,12 @@ public class EPAMEnglishQuestion {
         this.company = company;
         this.subject = subject;
         this.grammarrule = grammarrule;
+        this.questiontextintroduction = questiontextintroduction;
         this.questiontext = questiontext;
+        this.questiontextconclusion = questiontextconclusion;
+        this.numberoftrue = numberoftrue;
+        this.option1text = option0text;
+        this.option1check = option0check;
         this.option1text = option1text;
         this.option1check = option1check;
         this.option2text = option2text;
@@ -208,12 +233,52 @@ public class EPAMEnglishQuestion {
         this.grammarrule = grammarrule;
     }
 
+    public String getQuestiontextintroduction() {
+        return questiontextintroduction;
+    }
+
+    public void setQuestiontextintroduction(String questiontextintroduction) {
+        this.questiontextintroduction = questiontextintroduction;
+    }
+
     public String getQuestiontext() {
         return questiontext;
     }
 
     public void setQuestiontext(String questiontext) {
         this.questiontext = questiontext;
+    }
+
+    public String getQuestiontextconclusion() {
+        return questiontextconclusion;
+    }
+
+    public void setQuestiontextconclusion(String questiontextconclusion) {
+        this.questiontextconclusion = questiontextconclusion;
+    }
+
+    public String getNumberoftrue() {
+        return numberoftrue;
+    }
+
+    public void setNumberoftrue(String numberoftrue) {
+        this.numberoftrue = numberoftrue;
+    }
+
+    public String getOption0text() {
+        return option0text;
+    }
+
+    public void setOption0text(String option0text) {
+        this.option0text = option0text;
+    }
+
+    public String getOption0check() {
+        return option0check;
+    }
+
+    public void setOption0check(String option0check) {
+        this.option0check = option0check;
     }
 
     public String getOption1text() {

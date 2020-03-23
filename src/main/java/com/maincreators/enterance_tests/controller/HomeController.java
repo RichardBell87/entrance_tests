@@ -20,4 +20,14 @@ public class HomeController {
         return "entity";
     }
 
+    @GetMapping("/css")
+    public String css(Map <String, Object> model) {
+        return "css";
+    }
+
+    @GetMapping("/git")
+    public String git(Map <String, Object> model) {
+        return "git";
+    }
+
 }

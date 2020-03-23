@@ -1,3 +1,13 @@
+$('#option000input').on('keyup', function () {
+    var $this = $(this),
+        val = $this.val();
+    if (val.length >= 1) {
+        $('#option100text').show(100);
+    } else {
+        $('#option100text').hide(100);
+    }
+});
+
 $('#option100input').on('keyup', function () {
     var $this = $(this),
         val = $this.val();

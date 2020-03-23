@@ -38,6 +38,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 //                            "/activate/*",
 //                            "/connection",
 //                            "/error",
+                            "/css",//delete when will start project
+                            "/git",//delete when will start project
                             "/home",
                             "/registration",
                             "/static/**")

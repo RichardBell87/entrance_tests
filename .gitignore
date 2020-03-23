@@ -2,5 +2,11 @@
 .idea/
 .database/
 target/
+
+src/main/resources/static/testquestionimage/epamenglish/
+src/main/resources/static/testquestionimage/epamjava/
+src/main/resources/static/testquestionimage/softserveenglish/
+src/main/resources/static/testquestionimage/softservejava/
 src/main/resources/templates/entity.ftl
+
 src/main/resources/application-development.properties

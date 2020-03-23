@@ -66,7 +66,12 @@ public class QuestionAddController {
             @RequestParam String company,
             @RequestParam String subject,
             @RequestParam String grammarrule,
+            @RequestParam String questiontextintroduction,
             @RequestParam String questiontext,
+            @RequestParam String questiontextconclusion,
+            @RequestParam String numberoftrue,
+            @RequestParam String option0text,
+            @RequestParam String option0check,
             @RequestParam String option1text,
             @RequestParam String option1check,
             @RequestParam String option2text,
@@ -88,7 +93,6 @@ public class QuestionAddController {
             @RequestParam String errorintest,
             @RequestParam Integer authorid,
             @RequestParam("file") MultipartFile file,
-            @RequestParam String numberoftrue,
             Map <String, Object> model) throws IOException {
 
         Instant now = Instant.now(); //current date
@@ -99,12 +103,25 @@ public class QuestionAddController {
             errorintest = "true";
         }
 
+        if (questiontextintroduction.equals("unknown")) {
+            questiontextintroduction = null;
+        }
+
+        if (questiontextconclusion.equals("unknown")) {
+            questiontextconclusion = null;
+        }
+
         if (company.equals("EPAM") && subject.equals("English")) {
             EPAMEnglishQuestion epamenglishquestion = new EPAMEnglishQuestion(
                     company,
                     subject,
                     grammarrule,
+                    questiontextintroduction,
                     questiontext,
+                    questiontextconclusion,
+                    numberoftrue,
+                    option0text,
+                    option0check,
                     option1text,
                     option1check,
                     option2text,
@@ -131,7 +148,12 @@ public class QuestionAddController {
             epamenglishquestion.setCompany(company);
             epamenglishquestion.setSubject(subject);
             epamenglishquestion.setGrammarrule(grammarrule);
+            epamenglishquestion.setQuestiontextintroduction(questiontextintroduction);
             epamenglishquestion.setQuestiontext(questiontext);
+            epamenglishquestion.setQuestiontextconclusion(questiontextconclusion);
+            epamenglishquestion.setNumberoftrue(numberoftrue);
+            epamenglishquestion.setOption0text(option0text);
+            epamenglishquestion.setOption0check(option0check);
             epamenglishquestion.setOption1text(option1text);
             epamenglishquestion.setOption1check(option1check);
             epamenglishquestion.setOption2text(option2text);
@@ -175,7 +197,12 @@ public class QuestionAddController {
                     company,
                     subject,
                     grammarrule,
+                    questiontextintroduction,
                     questiontext,
+                    questiontextconclusion,
+                    numberoftrue,
+                    option0text,
+                    option0check,
                     option1text,
                     option1check,
                     option2text,
@@ -202,7 +229,12 @@ public class QuestionAddController {
             epamjavaquestion.setCompany(company);
             epamjavaquestion.setSubject(subject);
             epamjavaquestion.setGrammarrule(grammarrule);
+            epamjavaquestion.setQuestiontextintroduction(questiontextintroduction);
             epamjavaquestion.setQuestiontext(questiontext);
+            epamjavaquestion.setQuestiontextconclusion(questiontextconclusion);
+            epamjavaquestion.setNumberoftrue(numberoftrue);
+            epamjavaquestion.setOption0text(option0text);
+            epamjavaquestion.setOption0check(option0check);
             epamjavaquestion.setOption1text(option1text);
             epamjavaquestion.setOption1check(option1check);
             epamjavaquestion.setOption2text(option2text);
@@ -246,7 +278,12 @@ public class QuestionAddController {
                     company,
                     subject,
                     grammarrule,
+                    questiontextintroduction,
                     questiontext,
+                    questiontextconclusion,
+                    numberoftrue,
+                    option0text,
+                    option0check,
                     option1text,
                     option1check,
                     option2text,
@@ -273,7 +310,12 @@ public class QuestionAddController {
             softserveenglishquestion.setCompany(company);
             softserveenglishquestion.setSubject(subject);
             softserveenglishquestion.setGrammarrule(grammarrule);
+            softserveenglishquestion.setQuestiontextintroduction(questiontextintroduction);
             softserveenglishquestion.setQuestiontext(questiontext);
+            softserveenglishquestion.setQuestiontextconclusion(questiontextconclusion);
+            softserveenglishquestion.setNumberoftrue(numberoftrue);
+            softserveenglishquestion.setOption0text(option0text);
+            softserveenglishquestion.setOption0check(option0check);
             softserveenglishquestion.setOption1text(option1text);
             softserveenglishquestion.setOption1check(option1check);
             softserveenglishquestion.setOption2text(option2text);
@@ -318,7 +360,12 @@ public class QuestionAddController {
                     company,
                     subject,
                     grammarrule,
+                    questiontextintroduction,
                     questiontext,
+                    questiontextconclusion,
+                    numberoftrue,
+                    option0text,
+                    option0check,
                     option1text,
                     option1check,
                     option2text,
@@ -340,13 +387,17 @@ public class QuestionAddController {
                     dateofcreate,
                     dateoflastchange,
                     errorintest,
-                    authorid,
-                    numberoftrue);
+                    authorid);
 
             softservejavaquestion.setCompany(company);
             softservejavaquestion.setSubject(subject);
             softservejavaquestion.setGrammarrule(grammarrule);
+            softservejavaquestion.setQuestiontextintroduction(questiontextintroduction);
             softservejavaquestion.setQuestiontext(questiontext);
+            softservejavaquestion.setQuestiontextconclusion(questiontextconclusion);
+            softservejavaquestion.setNumberoftrue(numberoftrue);
+            softservejavaquestion.setOption0text(option0text);
+            softservejavaquestion.setOption0check(option0check);
             softservejavaquestion.setOption1text(option1text);
             softservejavaquestion.setOption1check(option1check);
             softservejavaquestion.setOption2text(option2text);
@@ -369,7 +420,6 @@ public class QuestionAddController {
             softservejavaquestion.setDateoflastchange(dateoflastchange);
             softservejavaquestion.setErrorintest(errorintest);
             softservejavaquestion.setAuthorid(authorid);
-            softservejavaquestion.setNumberoftrue(numberoftrue);
 
             if (file != null && !file.getOriginalFilename().isEmpty()) {
                 File uploadDir = new File(softservejavauploadPath);

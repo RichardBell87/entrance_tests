@@ -5,6 +5,9 @@
 
 <head>
     <#include "service_parts/head.ftl">
+    <#if isUser || isAdmin || isCreator>
+        <meta http-equiv = "refresh" content = "0; url = /home"/>
+    </#if>
 </head>
 
 <body>
@@ -51,6 +54,7 @@
                 </form>
             </div>
         </#if>
+        <hr>
     </div>
 </div>
 

@@ -2,6 +2,16 @@
     text-align: center;
 }
 
+#borderradiusleft {
+    background-color: lightgrey;
+    border-radius: 10px 0px 0px 0px;
+}
+
+#borderradiusright {
+    background-color: darkcyan;
+    border-radius: 0px 0px 10px 0px;
+}
+
 .card-img {
     min-height: 200px;
     max-height: 200px;
@@ -67,6 +77,66 @@
 
 .service_in {
     text-align: left;
+}
+
+.text-black {
+    color: black;
+}
+
+.text-blue {
+    color: blue;
+}
+
+.text-chocolate {
+    color: chocolate;
+}
+
+/*.text-indigo {*/
+/*color: indigo;*/
+/*}*/
+
+.text-green {
+    color: green;
+}
+
+.text-grey {
+    color: grey;
+}
+
+/*.text-magenta {*/
+/*color: magenta;*/
+/*}*/
+
+/*.text-navy {*/
+/*color: navy;*/
+/*}*/
+
+/*.text-orange {*/
+/*color: orange;*/
+/*}*/
+
+.text-purple {
+    color: purple;
+}
+
+.text-red {
+    color: red;
+}
+
+/*.text-turquoise {*/
+/*color: turquoise;*/
+/*}*/
+
+/*.text-someblue {*/
+/*color: #3137ff;*/
+/*}*/
+
+/*.text-yellow {*/
+    /*color: yellow;*/
+/*}*/
+
+#option100text {
+    display: none;
 }
 
 #option200text {

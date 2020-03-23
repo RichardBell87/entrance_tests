@@ -32,6 +32,7 @@
                             <input type="text"
                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                                    name="username"
+                                   value="prestonharvey1963@gmail.com"
                                    class="form-control border-primary"
                                    placeholder="Email">
                         </div>
@@ -41,6 +42,7 @@
                             <input type="password"
                                    pattern="{2,250}"
                                    name="password"
+                                   value="1963prestonharvey"
                                    class="form-control border-primary"
                                    id="passInput1"
                                    placeholder="Password"
@@ -98,6 +100,7 @@
                             <input type="text"
                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                                    name="username"
+                                   value="actio2016@gmail.com"
                                    class="form-control border-primary"
                                    placeholder="Email">
                         </div>
@@ -107,6 +110,7 @@
                             <input type="password"
                                    pattern="{2,250}"
                                    name="password"
+                                   value="27uhelyz2081"
                                    class="form-control border-primary"
                                    id="passInput2"
                                    placeholder="Password"

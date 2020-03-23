@@ -6,6 +6,12 @@
 <#if (springMacroRequestContext.requestUri?contains("/home"))>
         <title>Entrance Tests</title>
 </#if>
+<#if (springMacroRequestContext.requestUri?contains("/css"))>
+        <title>ET CSS</title>
+</#if>
+<#if (springMacroRequestContext.requestUri?contains("/git"))>
+        <title>ET Git</title>
+</#if>
 <#if (springMacroRequestContext.requestUri?contains("/epam-academy-english-test"))>
         <title>ET EPAM English Test</title>
 </#if>

@@ -43,7 +43,8 @@
                    value="English"
                    pattern="[E][n][g][l][i][s][h]"
                    required
-                   autocomplete="off">
+                   autocomplete="off"
+                   checked>
             <label class="form-check-label mt-0 mr-1 mb-0 ml-1"
                    for="inlineRadio1">English</label>
             <input class="form-check-input mt-0 mr-1 mb-0 ml-1"
@@ -53,8 +54,7 @@
                    value="Java"
                    pattern="[J][a][v][a]"
                    required
-                   autocomplete="off"
-                   checked>
+                   autocomplete="off">
             <label class="form-check-label mt-0 mr-1 mb-0 ml-1"
                    for="inlineRadio2">Java</label>
         </div>
@@ -148,6 +148,13 @@
                         <label class="form-check-label mt-0 mr-1 mb-0 ml-1"
                                for="inlineRadio2">M</label>
                     </div>
+                    <h5 class="text-dark">Question text introduction:
+                        <input class="form-control-sm col-9"
+                               type="text"
+                               name="questiontextintroduction"
+                               autocomplete="off"
+                               placeholder="Please, add question text introduction..."/>
+                    </h5>
                     <h5>
                     <#--<button type="button"-->
                     <#--class="btn btn-outline-primary dropdown-toggle mt-0 mr-1 mb-0 ml-1"-->
@@ -160,6 +167,13 @@
                                   name="questiontext"
                                   autocomplete="off"
                                   placeholder="Please, add question text..."></textarea>
+                    </h5>
+                    <h5 class="text-dark">Question text conclusion:
+                        <input class="form-control-sm col-9"
+                               type="text"
+                               name="questiontextconclusion"
+                               autocomplete="off"
+                               placeholder="Please, add question text conclusion..."/>
                     </h5>
                     <div class="question-form">
                         <label class="question-label">Question image (maximum size <= 1 MB)</label>
@@ -214,7 +228,59 @@
             <#--</div>-->
                 <div class="card-body">
                     <p class="card-text"
-                       id="option100text">Option <span class="font-weight-bold text-primary">a</span>:
+                       id="option000text">Option <span class="font-weight-bold text-primary">a</span>:
+                        <input class="form-control-sm col-7"
+                               id="option000input"
+                               type="text"
+                               name="option0text"
+                               autocomplete="off"
+                               placeholder="Please, add answer option..."/>
+                        <a class="form-check form-check-inline text-dark">
+                            <input class="form-check-input mt-0 mr-1 mb-0 ml-1"
+                                   type="radio"
+                                   name="option0check"
+                                   id="inlineRadio1"
+                                   value="unknown"
+                                   pattern="[u][n][k][n][o][w][n]"
+                                   required
+                                   autocomplete="off"
+                                   checked>
+                            <label class="form-check-label mt-0 mr-1 mb-0 ml-1 text-warning"
+                                   for="inlineRadio1">unknown</label>
+                            <input class="form-check-input mt-0 mr-1 mb-0 ml-1"
+                                   type="radio"
+                                   name="option0check"
+                                   id="inlineRadio2"
+                                   value="true"
+                                   pattern="[t][r][u][e]"
+                                   required
+                                   autocomplete="off">
+                            <label class="form-check-label mt-0 mr-1 mb-0 ml-1 text-primary"
+                                   for="inlineRadio2">true</label>
+                            <input class="form-check-input mt-0 mr-1 mb-0 ml-1"
+                                   type="radio"
+                                   name="option0check"
+                                   id="inlineRadio3"
+                                   value="false"
+                                   pattern="[f][a][l][s][e]"
+                                   required
+                                   autocomplete="off">
+                            <label class="form-check-label mt-0 mr-1 mb-0 ml-1 text-dark"
+                                   for="inlineRadio3">false</label>
+                            <input class="form-check-input mt-0 mr-1 mb-0 ml-1"
+                                   type="radio"
+                                   name="option0check"
+                                   id="inlineRadio4"
+                                   value="probable"
+                                   pattern="[p][r][o][b][a][b][l][e]"
+                                   required
+                                   autocomplete="off">
+                            <label class="form-check-label mt-0 mr-1 mb-0 ml-1 text-success"
+                                   for="inlineRadio4">probable</label>
+                        </a>
+                    </p>
+                    <p class="card-text"
+                       id="option100text">Option <span class="font-weight-bold text-primary">b</span>:
                         <input class="form-control-sm col-7"
                                id="option100input"
                                type="text"
@@ -266,7 +332,7 @@
                         </a>
                     </p>
                     <p class="card-text"
-                       id="option200text">Option <span class="font-weight-bold text-primary">b</span>:
+                       id="option200text">Option <span class="font-weight-bold text-primary">c</span>:
                         <input class="form-control-sm col-7"
                                id="option200input"
                                type="text"
@@ -318,7 +384,7 @@
                         </a>
                     </p>
                     <p class="card-text"
-                       id="option300text">Option <span class="font-weight-bold text-primary">c</span>:
+                       id="option300text">Option <span class="font-weight-bold text-primary">d</span>:
                         <input class="form-control-sm col-7"
                                id="option300input"
                                type="text"
@@ -370,7 +436,7 @@
                         </a>
                     </p>
                     <p class="card-text"
-                       id="option400text">Option <span class="font-weight-bold text-primary">d</span>:
+                       id="option400text">Option <span class="font-weight-bold text-primary">e</span>:
                         <input class="form-control-sm col-7"
                                id="option400input"
                                type="text"
@@ -422,7 +488,7 @@
                         </a>
                     </p>
                     <p class="card-text"
-                       id="option500text">Option <span class="font-weight-bold text-primary">e</span>:
+                       id="option500text">Option <span class="font-weight-bold text-primary">f</span>:
                         <input class="form-control-sm col-7"
                                id="option500input"
                                type="text"
@@ -473,7 +539,7 @@
                         </a>
                     </p>
                     <p class="card-text"
-                       id="option600text">Option <span class="font-weight-bold text-primary">f</span>:
+                       id="option600text">Option <span class="font-weight-bold text-primary">g</span>:
                         <input class="form-control-sm col-7"
                                id="option600input"
                                type="text"
@@ -525,7 +591,7 @@
                         </a>
                     </p>
                     <p class="card-text"
-                       id="option700text">Option <span class="font-weight-bold text-primary">g</span>:
+                       id="option700text">Option <span class="font-weight-bold text-primary">h</span>:
                         <input class="form-control-sm col-7"
                                id="option700input"
                                type="text"
@@ -576,7 +642,7 @@
                         </a>
                     </p>
                     <p class="card-text"
-                       id="option800text">Option <span class="font-weight-bold text-primary">h</span>:
+                       id="option800text">Option <span class="font-weight-bold text-primary">i</span>:
                         <input class="form-control-sm col-7"
                                id="option800input"
                                type="text"
@@ -628,7 +694,7 @@
                         </a>
                     </p>
                     <p class="card-text"
-                       id="option900text">Option <span class="font-weight-bold text-primary">i</span>:
+                       id="option900text">Option <span class="font-weight-bold text-primary">j</span>:
                         <input class="form-control-sm col-7"
                                id="option900input"
                                type="text"

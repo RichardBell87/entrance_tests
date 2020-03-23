@@ -21,6 +21,7 @@
             <h4 class="text-danger mt-2 mr-1 mb-0 ml-1">Error 404...</h4>
             <h4 class="text-dark mt-2 mr-1 mb-0 ml-1">We are already working on a solution. Please try again later.</h4>
         </div>
+        <hr>
     </div>
 </div>
 <div class="container_by_footer">

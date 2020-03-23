@@ -23,6 +23,7 @@
         <div class="questions_list mt-0 mr-1 mb-0 ml-1">
             <#include "service_parts/questions_list.ftl">
         </div>
+        <hr>
     </div>
 </div>
 <div class="container_by_footer">
