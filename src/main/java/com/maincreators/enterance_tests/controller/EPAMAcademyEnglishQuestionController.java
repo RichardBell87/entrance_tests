@@ -224,36 +224,18 @@ public class EPAMAcademyEnglishQuestionController {
 
             //сортувати по вмісту питання та/або відповіді (текст ПУСТИЙ, тип відповіді TRUE)
         } else if ((where.equals("everywhere")) && (what.equals("true")) && (text.isEmpty())) {
-            questions000 = epamEnglishQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption0checkIsLikeAndOption0textIsNotLike(
-                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
-            questions100 = epamEnglishQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption1checkIsLikeAndOption1textIsNotLike(
-                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
-            questions200 = epamEnglishQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption2checkIsLikeAndOption2textIsNotLike(
-                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
-            questions300 = epamEnglishQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption3checkIsLikeAndOption3textIsNotLike(
-                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
-            questions400 = epamEnglishQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption4checkIsLikeAndOption4textIsNotLike(
-                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
-            questions500 = epamEnglishQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption5checkIsLikeAndOption5textIsNotLike(
-                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
-            questions600 = epamEnglishQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption6checkIsLikeAndOption6textIsNotLike(
-                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
-            questions700 = epamEnglishQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption7checkIsLikeAndOption7textIsNotLike(
-                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
-            questions800 = epamEnglishQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption8checkIsLikeAndOption8textIsNotLike(
-                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
-            questions900 = epamEnglishQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption9checkIsLikeAndOption9textIsNotLike(
+            questions000 = epamEnglishQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption0checkIsLikeAndOption0textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption1checkIsLikeAndOption1textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption2checkIsLikeAndOption2textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption3checkIsLikeAndOption3textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption4checkIsLikeAndOption4textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption5checkIsLikeAndOption5textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption6checkIsLikeAndOption6textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption7checkIsLikeAndOption7textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption8checkIsLikeAndOption8textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption9checkIsLikeAndOption9textIsNotLike(
+                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "",
+                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "",
+                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "",
+                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "",
+                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "",
+                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "",
+                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "",
+                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "",
+                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "",
                     createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
             List <EPAMEnglishQuestion> newList = new ArrayList <EPAMEnglishQuestion>(questions000);
-            newList.addAll(questions100);
-            newList.addAll(questions200);
-            newList.addAll(questions300);
-            newList.addAll(questions400);
-            newList.addAll(questions500);
-            newList.addAll(questions600);
-            newList.addAll(questions700);
-            newList.addAll(questions800);
-            newList.addAll(questions900);
             questions = newList;
 
             //сортувати по вмісту питання та/або відповіді (текст НЕ ПУСТИЙ, тип відповіді UNKNOWN/PROBABLE)
@@ -382,36 +364,18 @@ public class EPAMAcademyEnglishQuestionController {
 
             //сортувати по вмісту питання (текст ПУСТИЙ, тип відповіді TRUE)
         } else if ((where.equals("question")) && (what.equals("true")) && (text.isEmpty())) {
-            questions000 = epamEnglishQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption0checkIsLikeAndOption0textIsNotLike(
-                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
-            questions100 = epamEnglishQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption1checkIsLikeAndOption1textIsNotLike(
-                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
-            questions200 = epamEnglishQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption2checkIsLikeAndOption2textIsNotLike(
-                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
-            questions300 = epamEnglishQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption3checkIsLikeAndOption3textIsNotLike(
-                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
-            questions400 = epamEnglishQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption4checkIsLikeAndOption4textIsNotLike(
-                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
-            questions500 = epamEnglishQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption5checkIsLikeAndOption5textIsNotLike(
-                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
-            questions600 = epamEnglishQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption6checkIsLikeAndOption6textIsNotLike(
-                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
-            questions700 = epamEnglishQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption7checkIsLikeAndOption7textIsNotLike(
-                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
-            questions800 = epamEnglishQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption8checkIsLikeAndOption8textIsNotLike(
-                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
-            questions900 = epamEnglishQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption9checkIsLikeAndOption9textIsNotLike(
+            questions000 = epamEnglishQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption0checkIsLikeAndOption0textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption1checkIsLikeAndOption1textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption2checkIsLikeAndOption2textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption3checkIsLikeAndOption3textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption4checkIsLikeAndOption4textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption5checkIsLikeAndOption5textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption6checkIsLikeAndOption6textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption7checkIsLikeAndOption7textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption8checkIsLikeAndOption8textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption9checkIsLikeAndOption9textIsNotLike(
+                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "",
+                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "",
+                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "",
+                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "",
+                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "",
+                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "",
+                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "",
+                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "",
+                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "",
                     createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
             List <EPAMEnglishQuestion> newList = new ArrayList <EPAMEnglishQuestion>(questions000);
-            newList.addAll(questions100);
-            newList.addAll(questions200);
-            newList.addAll(questions300);
-            newList.addAll(questions400);
-            newList.addAll(questions500);
-            newList.addAll(questions600);
-            newList.addAll(questions700);
-            newList.addAll(questions800);
-            newList.addAll(questions900);
             questions = newList;
 
             //сортувати по вмісту питання (текст НЕ ПУСТИЙ, тип відповіді UNKNOWN/PROBABLE)
@@ -545,36 +509,18 @@ public class EPAMAcademyEnglishQuestionController {
 
             //сортувати по вмісту відповіді (текст ПУСТИЙ, тип відповіді TRUE)
         } else if ((where.equals("option")) && (what.equals("true")) && (text.isEmpty())) {
-            questions000 = epamEnglishQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption0checkIsLikeAndOption0textIsNotLike(
-                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
-            questions100 = epamEnglishQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption1checkIsLikeAndOption1textIsNotLike(
-                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
-            questions200 = epamEnglishQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption2checkIsLikeAndOption2textIsNotLike(
-                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
-            questions300 = epamEnglishQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption3checkIsLikeAndOption3textIsNotLike(
-                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
-            questions400 = epamEnglishQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption4checkIsLikeAndOption4textIsNotLike(
-                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
-            questions500 = epamEnglishQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption5checkIsLikeAndOption5textIsNotLike(
-                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
-            questions600 = epamEnglishQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption6checkIsLikeAndOption6textIsNotLike(
-                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
-            questions700 = epamEnglishQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption7checkIsLikeAndOption7textIsNotLike(
-                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
-            questions800 = epamEnglishQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption8checkIsLikeAndOption8textIsNotLike(
-                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
-            questions900 = epamEnglishQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption9checkIsLikeAndOption9textIsNotLike(
+            questions000 = epamEnglishQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption0checkIsLikeAndOption0textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption1checkIsLikeAndOption1textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption2checkIsLikeAndOption2textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption3checkIsLikeAndOption3textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption4checkIsLikeAndOption4textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption5checkIsLikeAndOption5textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption6checkIsLikeAndOption6textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption7checkIsLikeAndOption7textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption8checkIsLikeAndOption8textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption9checkIsLikeAndOption9textIsNotLike(
+                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "",
+                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "",
+                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "",
+                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "",
+                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "",
+                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "",
+                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "",
+                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "",
+                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "",
                     createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
             List <EPAMEnglishQuestion> newList = new ArrayList <EPAMEnglishQuestion>(questions000);
-            newList.addAll(questions100);
-            newList.addAll(questions200);
-            newList.addAll(questions300);
-            newList.addAll(questions400);
-            newList.addAll(questions500);
-            newList.addAll(questions600);
-            newList.addAll(questions700);
-            newList.addAll(questions800);
-            newList.addAll(questions900);
             questions = newList;
 
             //сортувати по вмісту відповіді (текст НЕ ПУСТИЙ, тип відповіді UNKNOWN/PROBABLE)

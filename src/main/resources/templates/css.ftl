@@ -14,13 +14,30 @@
             <h5 class="text-dark mt-0 mr-1 mb-0 ml-1">SoftServeJavaTestCSS</h5>
         </div>
 
+        <#--We expect my aunt Laurie <select><option class="card-text text-success">to visit</option></select> (visit) next April.<br>-->
+        <#--I will never forget  <select><option class="card-text text-primary">seeing</option></select> (see) your face when you heard you'd won the lottery!<br>-->
+        <#--You  <select><option class="card-text text-primary">will pass</option></select> (pass) your exams if you study hard.<br>-->
+        <#--If our car had been insured, we  <select><option class="card-text text-primary">would not have lost</option></select> (lose) a lot of money when it was stolen.<br>-->
+        <#--If I won a million, I  <select><option class="card-text text-primary">would give</option></select> (give) all the money to charity.<br>-->
+        <#--You shouldn't  <select><option class="card-text text-primary">have sent</option></select> (send)  that e-mail to Jason when you were angry. He was really upset about it.<br>-->
+        <#--I can't get used to  <select><option class="card-text text-primary">reading</option></select> (read) in Mandarin. Their writing is so confusing!<br>-->
+
+
+
+
+
+
+
+
+
+
         <#--<span class='text-grey'>1</span>&nbsp&nbsp<span class='text-purple'>public class</span> <span class='text-black'>Example {</span><br>-->
         <#--<span class='text-grey'>2</span><br>-->
         <#--<span class='text-grey'>3</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class='text-purple'>public static void</span> <span class='text-black'>test() {</span><br>-->
         <#--<span class='text-grey'>4</span><br>-->
-        <#--<span class='text-grey'>5</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class='text-black'>System.</span><span class='text-blue'>out</span><span class='text-black'>.println(message);</span><br>-->
+        <#--<span class='text-grey'>5</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class='text-black'>System.</span><span class='text-bluu'>out</span><span class='text-black'>.println(message);</span><br>-->
         <#--<span class='text-grey'>6</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class='text-black'>}</span><br>-->
-        <#--<span class='text-grey'>7</span>&nbsp&nbsp<span class='text-black'>}</span><br>-->
+        <#--<span class='text-grey'>7</span>&nbsp&nbsp<span class='text-black'>}</span>-->
 
         <#--<span class='text-purple'>public class</span> <span class='text-black'>Example {</span><br>-->
         <#--<br>-->
@@ -124,11 +141,11 @@
         <#--&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class='text-black'>i++;</span><br>-->
         <#--<span class='text-black'>}</span> <span class='text-purple'>while</span> <span class='text-black'>(i < 32767);</span><br>-->
 
-        <#--<span class='text-grey'>1.</span>&nbsp&nbsp<span class='text-purple'>interface</span> <span class='text-black'>Box {</span><br>-->
-        <#--<span class='text-grey'>2.</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class='text-purple'>protected void</span> <span class='text-black'>open();</span><br>-->
-        <#--<span class='text-grey'>3.</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class='text-purple'>void</span> <span class='text-black'>close();</span><br>-->
-        <#--<span class='text-grey'>4.</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class='text-purple'>public void</span> <span class='text-black'>empty();</span><br>-->
-        <#--<span class='text-grey'>5.</span>&nbsp&nbsp<span class='text-black'>}</span><br>-->
+        <#--<span class='text-grey'>1</span>&nbsp&nbsp<span class='text-purple'>interface</span> <span class='text-black'>Box {</span><br>-->
+        <#--<span class='text-grey'>2</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class='text-purple'>protected void</span> <span class='text-black'>open();</span><br>-->
+        <#--<span class='text-grey'>3</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class='text-purple'>void</span> <span class='text-black'>close();</span><br>-->
+        <#--<span class='text-grey'>4</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class='text-purple'>public void</span> <span class='text-black'>empty();</span><br>-->
+        <#--<span class='text-grey'>5</span>&nbsp&nbsp<span class='text-black'>}</span><br>-->
 
         <#--<span class='text-purple'>public class</span> <span class='text-black'>Parent {</span><br>-->
         <#--&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class='text-purple'>protected</span> <span class='text-black'>String</span> <span class='text-blue'>str</span> <span class='text-black'>=</span> <span class='text-blue'>"Parent class"</span><span class='text-black'>;</span><br>-->
@@ -154,7 +171,8 @@
         <#--<span class='text-blue'>String</span> <span class='text-black'>s2</span> <span class='text-purple'>= new</span> <span class='text-blue'>String</span><span class='text-black'>(</span><span class='text-chocolate'>"abc"</span><span class='text-black'>);</span><br>-->
         <#--<span class='text-blue'>System</span><span class='text-black'>.out.println(s1</span><span class='text-purple'>==</span><span class='text-black'>s2.intern());</span><br>-->
 
-        <#--<br><select><option>catch</option><option>throw</option><option class="card-text text-success">throws</option></select> is used to generate an exception explicitly<br>-->
+        <#--<br>-->
+        <#--<select><option>catch</option><option>throw</option><option class="card-text text-success">throws</option></select> is used to generate an exception explicitly<br>-->
         <#--<select id="borderradiusleft"><option>Exception</option><option>Error</option><option class="card-text text-success">Throwable</option></select> class is related o all the exceptions that are explicitly thrown<br>-->
         <#--Operator <select id="borderradiusright"><option>throw</option><option class="card-text text-success">new</option><option>throws</option></select> is used to generate an instance of an exception<br>-->
 
@@ -212,35 +230,103 @@
         <#--&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class='text-black'>}</span><br>-->
         <#--<span class='text-black'>}</span><br>-->
 
-        <span class='text-black'>}</span><br>
+        <#--<span class='text-black'>List&lt;Integer&gt;</span> <span class='text-chocolate'>list</span> <span class='text-black'>= Arrays.asList(5, 4, 3, 2, 1);</span><br>-->
+        <#--<span class='text-chocolate'>list</span><span class='text-black'>.stream().filter((</span><span class='text-chocolate'>n</span><span class='text-black'>) -&gt;</span> <span class='text-chocolate'>n</span> <span class='text-black'>&gt; 3).sorted().forEach(System.</span><span class='text-blue'>out</span><span class='text-black'>::print);</span><br>-->
 
+        <#--Method limit() of stream in java 8 <select><option class="card-text text-primary">reduces the size of the stream</option><option class="card-text text-dark">?????????</option><option class="card-text text-dark">?????????</option></select><br>-->
 
+        <#--<span class='text-black'>List&lt;String&gt;</span> <span class='text-chocolate'>list</span> <span class='text-black'>= Arrays.asList(</span><span class='text-blue'>"SoftServe"</span><span class='text-black'>,</span> <span class='text-blue'>""</span><span class='text-black'>,</span> <span class='text-blue'>"IT Academy"</span><span class='text-black'>,</span> <span class='text-blue'>""</span><span class='text-black'>,</span> <span class='text-blue'>"Student"</span><span class='text-black'>);</span><br>-->
+        <#--<span class='text-purple'>int</span> <span class='text-chocolate'>count</span> <span class='text-black'>= (</span><span class='text-purple'>int</span><span class='text-black'>)</span> <span class='text-chocolate'>list</span><span class='text-black'>.stream()</span><br>-->
+        <#--&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class='text-black'>.map(String::toUpperCase)</span><br>-->
+        <#--&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class='text-black'>.filter(</span><span class='text-chocolate'>s</span> <span class='text-black'>-&gt;</span> <span class='text-chocolate'>s</span><span class='text-black'>.isEmpty()).count();</span><br>-->
+        <#--<span class='text-black'>System.</span><span class='text-blue'>out</span><span class='text-black'>.println(</span><span class='text-chocolate'>count</span><span class='text-black'>);</span><br>-->
 
+        <#--All the Enums extend <select><option class="card-text text-primary">java.lang.Enum</option><option class="card-text text-dark">?????????</option><option class="card-text text-dark">?????????</option></select>class<br>-->
 
+        <#--<br>-->
+        <#--<select><option class="card-text text-success">true</option><option class="card-text text-dark">false</option></select>Interface can extend only one interface<br>-->
+        <#--<select><option class="card-text text-success">true</option><option class="card-text text-dark">false</option></select>Class can extend interface<br>-->
+        <#--<select><option class="card-text text-success">true</option><option class="card-text text-dark">false</option></select>Interface can extend one or more interfaces<br>-->
+        <#--<select><option class="card-text text-success">true</option><option class="card-text text-dark">false</option></select>Interface can have a constructor<br>-->
+        <#--<select><option class="card-text text-success">true</option><option class="card-text text-dark">false</option></select>All methods of interface are public by default<br>-->
 
+        <#--<span class='text-grey'>1</span>&nbsp&nbsp<span class='text-purple'>public class</span> <span class='text-black'>Example {</span><br>-->
+        <#--<span class='text-grey'>2</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class='text-purple'>private static</span> <span class='text-black'>String</span> <span class='text-blue'>str</span><span class='text-black'>;</span><br>-->
+        <#--<span class='text-grey'>3</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class='text-purple'>private static int</span> <span class='text-blue'>n</span><span class='text-black'>;</span><br>-->
+        <#--<span class='text-grey'>4</span><br>-->
+        <#--<span class='text-grey'>5</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class='text-purple'>public static void</span> <span class='text-black'>main(String[ ]</span> <span class='text-chocolate'>args</span><span class='text-black'>) {</span><br>-->
+        <#--<span class='text-grey'>6</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class='text-black'>System.</span><span class='text-blue'>out</span><span class='text-black'>.println(</span><span class='text-blue'>"String is "</span> <span class='text-black'>+</span> <span class='text-blue'>str</span><span class='text-black'>);</span><br>-->
+        <#--<span class='text-grey'>7</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class='text-black'>System.</span><span class='text-blue'>out</span><span class='text-black'>.println(</span><span class='text-blue'>"Integer equals "</span> <span class='text-black'>+</span> <span class='text-blue'>n</span><span class='text-black'>);</span><br>-->
+        <#--<span class='text-grey'>8</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class='text-black'>}</span><br>-->
+        <#--<span class='text-grey'>9</span>&nbsp&nbsp<span class='text-black'>}</span>-->
 
+        <#--<span class='text-purple'>public class</span> <span class='text-black'>Example {</span><br>-->
+        <#--<br>-->
+        <#--&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class='text-purple'>static</span> <span class='text-black'>String</span> <span class='text-blue'>str</span> <span class='text-black'>=</span> <span class='text-blue'>"Team 1"</span> <span class='text-black'>;</span><br>-->
+        <#--<br>-->
+        <#--&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class='text-purple'>static void</span> <span class='text-black'>change(</span><span class='text-purple'>int</span> <span class='text-chocolate'>a</span><span class='text-black'>) {</span> <span class='text-chocolate'>a</span> <span class='text-black'>= 10; }</span><br>-->
+        <#--&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class='text-purple'>static void</span> <span class='text-black'>change(String</span> <span class='text-chocolate'>str</span><span class='text-black'>) { Example.</span><span class='text-blue'>str</span> <span class='text-black'>=</span> <span class='text-blue'>"Team 2"</span><span class='text-black'>; }</span><br>-->
+        <#--<br>-->
+        <#--&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class='text-purple'>public static void</span> <span class='text-black'>main(String</span> <span class='text-chocolate'>args</span><span class='text-black'>[ ]) {</span><br>-->
+        <#--&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class='text-purple'>int</span> <span class='text-chocolate'>a</span> <span class='text-black'>= 5;</span><br>-->
+        <#--&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class='text-black'>change(</span><span class='text-chocolate'>a</span><span class='text-black'>);</span><br>-->
+        <#--&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class='text-black'>change(</span><span class='text-blue'>str</span><span class='text-black'>);</span><br>-->
+        <#--&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class='text-black'>System.</span><span class='text-blue'>out</span><span class='text-black'>.println(</span><span class='text-blue'>str</span> <span class='text-black'>+</span> <span class='text-blue'>" "</span> <span class='text-black'>+</span> <span class='text-chocolate'>a</span><span class='text-black'>);</span><br>-->
+        <#--&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class='text-black'>}</span><br>-->
+        <#--<span class='text-black'>}</span><br>-->
 
+        <#--<br>-->
+        <#--<select><option class="card-text text-warning">Auto-boxing</option><option class="card-text text-warning">Auto-upcasting</option><option class="card-text text-warning">Auto-widening</option></select> occurs when small sized primitive type is casted to big sized primitive type.<br>-->
+        <#--<select><option class="card-text text-warning">Auto-boxing</option><option class="card-text text-warning">Auto-upcasting</option><option class="card-text text-warning">Auto-widening</option></select> occurs when sub class type is casted to super class type.<br>-->
+        <#--<select><option class="card-text text-warning">Auto-boxing</option><option class="card-text text-warning">Auto-upcasting</option><option class="card-text text-warning">Auto-widening</option></select> occurs when primitive type is casted to corresponding wrapper class<br>-->
 
+        <#--<span class='text-purple'>public class</span> <span class='text-black'>TestClass {</span><br>-->
+        <#--&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class='text-purple'>public static void</span> <span class='text-black'>main(String[ ]</span> <span class='text-chocolate'>args</span><span class='text-black'>) {</span><br>-->
+        <#--&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class='text-black'>System.</span><span class='text-blue'>out</span><span class='text-black'>.println(Season.SPRING);</span><br>-->
+        <#--&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class='text-black'>}</span><br>-->
+        <#--<span class='text-black'>}</span><br>-->
+        <#--<span class='text-purple'>class</span><span class='text-black'>A { }</span><br>-->
+        <#--<br>-->
+        <#--<span class='text-purple'>enum</span> <span class='text-black'>Season</span> <span class='text-purple'>extends</span> <span class='text-black'>A{</span><br>-->
+        <#--&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class='text-black'>WINTER, SPRING, SUMMER, FALL</span><br>-->
+        <#--<span class='text-black'>};</span><br>-->
 
+        <#--<br>-->
+        <#--The <select><option class="card-text text-warning">this</option><option class="card-text text-warning">super()</option><option class="card-text text-warning">super</option></select>  keyword in Java is a reference variable that is used to refer parent class objects.<br>-->
+        <#--The <select><option class="card-text text-warning">this</option><option class="card-text text-warning">super()</option><option class="card-text text-warning">super</option></select>  in Java is a reference variable that is used to refer parent class constructors.<br>-->
+        <#--The variables and methods to be called through <select><option class="card-text text-warning">this</option><option class="card-text text-warning">super()</option><option class="card-text text-warning">super</option></select>  keyword can be done at any time<br>-->
+        <#--Call to <select><option class="card-text text-warning">this</option><option class="card-text text-warning">super()</option><option class="card-text text-warning">super</option></select>  must be first statement in derived class constructor<br>-->
 
-
-
-
-
-
+        <span class="text-purple">public class</span> <span class="text-black">Example {</span><br>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class='text-purple'>public static void</span> <span class='text-black'>main(String[ ]</span> <span class='text-chocolate'>args</span><span class='text-black'>) {</span><br>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<select class='text-warning'><option>Parent p = new Parent();</option><option class='text-warning'>Parent p = new Example().new Child();</option><option class="text-dark">Parent p = new Child();</option></select><br>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<select class='text-dark' id="borderradiusleft"><option>System.out.println(p.method());</option><option class='text-warning'>System.out.println(((Child)p).method());</option><option class="text-warning">System.out.println(((Parent)p).method());</option></select><br>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class="text-black">}</span><br>
         <br>
-        <span class='text-red'>compile error</span><br>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class="text-purple">class</span> <span class="text-black">Parent {</span><br>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class="text-purple">int</span> <span class="text-black">method() {</span> <span class="text-purple">return</span> <span class="text-black">10; }</span><br>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class="text-black">}</span><br>
+        <br>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class="text-purple">class</span> <span class="text-black">Child</span> <span class="text-purple">extends</span> <span class="text-black">Parents {</span><br>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class="text-purple">int</span> <span class="text-black">method() {</span> <span class="text-purple">return</span> <span class="text-black">20; }</span><br>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class="text-black">}</span><br>
+        <span class="text-black">}</span><br>
 
-        <#--<span class='text-grey'>1.</span>&nbsp&nbsp<span class='text-purple'>public class</span> <span class='text-black'>Example {</span><br>-->
-        <#--<span class='text-grey'>2.</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class='text-purple'>private static</span> <span class='text-black'>String</span> <span class='text-blue'>str</span><span class='text-black'>;</span><br>-->
-        <#--<span class='text-grey'>3.</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class='text-purple'>private static int</span> <span class='text-blue'>n</span><span class='text-black'>;</span><br>-->
-        <#--<span class='text-grey'>4.</span><br>-->
-        <#--<span class='text-grey'>5.</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class='text-purple'>public static void</span> <span class='text-black'>main(String[ ]</span> <span class='text-chocolate'>args</span><span class='text-black'>) {</span><br>-->
-        <#--<span class='text-grey'>6.</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class='text-black'>System.</span><span class='text-blue'>out</span><span class='text-black'>.println(</span><span class='text-blue'>"String is "</span> <span class='text-black'>+</span> <span class='text-blue'>str</span><span class='text-black'>);</span><br>-->
-        <#--<span class='text-grey'>7.</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class='text-black'>System.</span><span class='text-blue'>out</span><span class='text-black'>.println(</span><span class='text-blue'>"Integer equals "</span> <span class='text-black'>+</span> <span class='text-blue'>n</span><span class='text-black'>);</span><br>-->
-        <#--<span class='text-grey'>8.</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class='text-black'>}</span><br>-->
-        <#--<span class='text-grey'>9.</span>&nbsp&nbsp<span class='text-black'>}</span>-->
 
+
+
+
+
+
+
+
+
+
+    <#--String is Integer equals-->
+        <#--Compile error will be generated in line 5-->
+        <#--String is null Integer equals 0-->
+        <#--Compile error will be generated in line 6-->
+        <#--String is Integer equals 0-->
     </div>
 </div>
 </body>

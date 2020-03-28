@@ -193,35 +193,17 @@ public interface EPAMEnglishQuestionRepository extends CrudRepository <EPAMEngli
     List <EPAMEnglishQuestion> findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndQuestiontextIsLikeAndOption9checkIsLike(
             Date created009after, Date created009before, Date updated009after, Date updated009before, String questionAAJtext, String option009check);
 
-    List <EPAMEnglishQuestion> findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption0checkIsLikeAndOption0textIsNotLike(
-            Date created001after, Date created001before, Date updated001after, Date updated001before, String option001check, String option001text);
-
-    List <EPAMEnglishQuestion> findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption1checkIsLikeAndOption1textIsNotLike(
-            Date created101after, Date created101before, Date updated101after, Date updated101before, String option101check, String option101text);
-
-    List <EPAMEnglishQuestion> findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption2checkIsLikeAndOption2textIsNotLike(
-            Date created201after, Date created201before, Date updated201after, Date updated201before, String option201check, String option201text);
-
-    List <EPAMEnglishQuestion> findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption3checkIsLikeAndOption3textIsNotLike(
-            Date created301after, Date created301before, Date updated301after, Date updated301before, String option301check, String option301text);
-
-    List <EPAMEnglishQuestion> findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption4checkIsLikeAndOption4textIsNotLike(
-            Date created401after, Date created401before, Date updated401after, Date updated401before, String option401check, String option401text);
-
-    List <EPAMEnglishQuestion> findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption5checkIsLikeAndOption5textIsNotLike(
-            Date created501after, Date created501before, Date updated501after, Date updated501before, String option501check, String option501text);
-
-    List <EPAMEnglishQuestion> findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption6checkIsLikeAndOption6textIsNotLike(
-            Date created601after, Date created601before, Date updated601after, Date updated601before, String option601check, String option601text);
-
-    List <EPAMEnglishQuestion> findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption7checkIsLikeAndOption7textIsNotLike(
-            Date created701after, Date created701before, Date updated701after, Date updated701before, String option701check, String option701text);
-
-    List <EPAMEnglishQuestion> findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption8checkIsLikeAndOption8textIsNotLike(
-            Date created801after, Date created801before, Date updated801after, Date updated801before, String option801check, String option801text);
-
-    List <EPAMEnglishQuestion> findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption9checkIsLikeAndOption9textIsNotLike(
-            Date created901after, Date created901before, Date updated901after, Date updated901before, String option901check, String option901text);
+    List <EPAMEnglishQuestion> findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption0checkIsLikeAndOption0textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption1checkIsLikeAndOption1textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption2checkIsLikeAndOption2textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption3checkIsLikeAndOption3textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption4checkIsLikeAndOption4textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption5checkIsLikeAndOption5textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption6checkIsLikeAndOption6textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption7checkIsLikeAndOption7textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption8checkIsLikeAndOption8textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption9checkIsLikeAndOption9textIsNotLike(
+            Date created000after, Date created000before, Date updated000after, Date updated000before, String option000check, String option000text,
+            Date created100after, Date created100before, Date updated100after, Date updated100before, String option100check, String option100text,
+            Date created200after, Date created200before, Date updated200after, Date updated200before, String option200check, String option200text,
+            Date created300after, Date created300before, Date updated300after, Date updated300before, String option300check, String option300text,
+            Date created400after, Date created400before, Date updated400after, Date updated400before, String option400check, String option400text,
+            Date created500after, Date created500before, Date updated500after, Date updated500before, String option500check, String option500text,
+            Date created600after, Date created600before, Date updated600after, Date updated600before, String option600check, String option600text,
+            Date created700after, Date created700before, Date updated700after, Date updated700before, String option700check, String option700text,
+            Date created800after, Date created800before, Date updated800after, Date updated800before, String option800check, String option800text,
+            Date created900after, Date created900before, Date updated900after, Date updated900before, String option900check, String option900text);
 
     List <EPAMEnglishQuestion> findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption0textIsLikeAndOption0checkIsLike(
             Date created001after, Date created001before, Date updated001after, Date updated001before, String questionAAAtext, String option001check);

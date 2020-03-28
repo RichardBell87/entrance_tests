@@ -224,36 +224,18 @@ public class SoftServeAcademyJavaQuestionController {
 
             //сортувати по вмісту питання та/або відповіді (текст ПУСТИЙ, тип відповіді TRUE)
         } else if ((where.equals("everywhere")) && (what.equals("true")) && (text.isEmpty())) {
-            questions000 = softServeJavaQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption0checkIsLikeAndOption0textIsNotLike(
-                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
-            questions100 = softServeJavaQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption1checkIsLikeAndOption1textIsNotLike(
-                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
-            questions200 = softServeJavaQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption2checkIsLikeAndOption2textIsNotLike(
-                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
-            questions300 = softServeJavaQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption3checkIsLikeAndOption3textIsNotLike(
-                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
-            questions400 = softServeJavaQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption4checkIsLikeAndOption4textIsNotLike(
-                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
-            questions500 = softServeJavaQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption5checkIsLikeAndOption5textIsNotLike(
-                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
-            questions600 = softServeJavaQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption6checkIsLikeAndOption6textIsNotLike(
-                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
-            questions700 = softServeJavaQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption7checkIsLikeAndOption7textIsNotLike(
-                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
-            questions800 = softServeJavaQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption8checkIsLikeAndOption8textIsNotLike(
-                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
-            questions900 = softServeJavaQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption9checkIsLikeAndOption9textIsNotLike(
+            questions000 = softServeJavaQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption0checkIsLikeAndOption0textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption1checkIsLikeAndOption1textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption2checkIsLikeAndOption2textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption3checkIsLikeAndOption3textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption4checkIsLikeAndOption4textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption5checkIsLikeAndOption5textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption6checkIsLikeAndOption6textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption7checkIsLikeAndOption7textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption8checkIsLikeAndOption8textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption9checkIsLikeAndOption9textIsNotLike(
+                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "",
+                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "",
+                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "",
+                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "",
+                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "",
+                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "",
+                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "",
+                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "",
+                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "",
                     createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
             List <SoftServeJavaQuestion> newList = new ArrayList <SoftServeJavaQuestion>(questions000);
-            newList.addAll(questions100);
-            newList.addAll(questions200);
-            newList.addAll(questions300);
-            newList.addAll(questions400);
-            newList.addAll(questions500);
-            newList.addAll(questions600);
-            newList.addAll(questions700);
-            newList.addAll(questions800);
-            newList.addAll(questions900);
             questions = newList;
 
             //сортувати по вмісту питання та/або відповіді (текст НЕ ПУСТИЙ, тип відповіді UNKNOWN/PROBABLE)
@@ -382,36 +364,18 @@ public class SoftServeAcademyJavaQuestionController {
 
             //сортувати по вмісту питання (текст ПУСТИЙ, тип відповіді TRUE)
         } else if ((where.equals("question")) && (what.equals("true")) && (text.isEmpty())) {
-            questions000 = softServeJavaQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption0checkIsLikeAndOption0textIsNotLike(
-                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
-            questions100 = softServeJavaQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption1checkIsLikeAndOption1textIsNotLike(
-                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
-            questions200 = softServeJavaQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption2checkIsLikeAndOption2textIsNotLike(
-                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
-            questions300 = softServeJavaQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption3checkIsLikeAndOption3textIsNotLike(
-                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
-            questions400 = softServeJavaQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption4checkIsLikeAndOption4textIsNotLike(
-                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
-            questions500 = softServeJavaQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption5checkIsLikeAndOption5textIsNotLike(
-                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
-            questions600 = softServeJavaQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption6checkIsLikeAndOption6textIsNotLike(
-                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
-            questions700 = softServeJavaQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption7checkIsLikeAndOption7textIsNotLike(
-                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
-            questions800 = softServeJavaQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption8checkIsLikeAndOption8textIsNotLike(
-                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
-            questions900 = softServeJavaQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption9checkIsLikeAndOption9textIsNotLike(
+            questions000 = softServeJavaQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption0checkIsLikeAndOption0textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption1checkIsLikeAndOption1textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption2checkIsLikeAndOption2textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption3checkIsLikeAndOption3textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption4checkIsLikeAndOption4textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption5checkIsLikeAndOption5textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption6checkIsLikeAndOption6textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption7checkIsLikeAndOption7textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption8checkIsLikeAndOption8textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption9checkIsLikeAndOption9textIsNotLike(
+                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "",
+                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "",
+                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "",
+                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "",
+                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "",
+                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "",
+                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "",
+                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "",
+                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "",
                     createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
             List <SoftServeJavaQuestion> newList = new ArrayList <SoftServeJavaQuestion>(questions000);
-            newList.addAll(questions100);
-            newList.addAll(questions200);
-            newList.addAll(questions300);
-            newList.addAll(questions400);
-            newList.addAll(questions500);
-            newList.addAll(questions600);
-            newList.addAll(questions700);
-            newList.addAll(questions800);
-            newList.addAll(questions900);
             questions = newList;
 
             //сортувати по вмісту питання (текст НЕ ПУСТИЙ, тип відповіді UNKNOWN/PROBABLE)
@@ -545,36 +509,18 @@ public class SoftServeAcademyJavaQuestionController {
 
             //сортувати по вмісту відповіді (текст ПУСТИЙ, тип відповіді TRUE)
         } else if ((where.equals("option")) && (what.equals("true")) && (text.isEmpty())) {
-            questions000 = softServeJavaQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption0checkIsLikeAndOption0textIsNotLike(
-                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
-            questions100 = softServeJavaQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption1checkIsLikeAndOption1textIsNotLike(
-                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
-            questions200 = softServeJavaQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption2checkIsLikeAndOption2textIsNotLike(
-                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
-            questions300 = softServeJavaQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption3checkIsLikeAndOption3textIsNotLike(
-                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
-            questions400 = softServeJavaQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption4checkIsLikeAndOption4textIsNotLike(
-                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
-            questions500 = softServeJavaQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption5checkIsLikeAndOption5textIsNotLike(
-                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
-            questions600 = softServeJavaQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption6checkIsLikeAndOption6textIsNotLike(
-                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
-            questions700 = softServeJavaQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption7checkIsLikeAndOption7textIsNotLike(
-                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
-            questions800 = softServeJavaQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption8checkIsLikeAndOption8textIsNotLike(
-                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
-            questions900 = softServeJavaQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption9checkIsLikeAndOption9textIsNotLike(
+            questions000 = softServeJavaQuestionRepository.findByDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption0checkIsLikeAndOption0textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption1checkIsLikeAndOption1textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption2checkIsLikeAndOption2textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption3checkIsLikeAndOption3textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption4checkIsLikeAndOption4textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption5checkIsLikeAndOption5textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption6checkIsLikeAndOption6textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption7checkIsLikeAndOption7textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption8checkIsLikeAndOption8textIsNotLikeOrDateofcreateIsBetweenAndDateoflastchangeIsBetweenAndOption9checkIsLikeAndOption9textIsNotLike(
+                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "",
+                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "",
+                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "",
+                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "",
+                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "",
+                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "",
+                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "",
+                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "",
+                    createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "",
                     createdafterdate, createdbeforedate, updatedafterdate, updatedbeforedate, optioncheck, "");
             List <SoftServeJavaQuestion> newList = new ArrayList <SoftServeJavaQuestion>(questions000);
-            newList.addAll(questions100);
-            newList.addAll(questions200);
-            newList.addAll(questions300);
-            newList.addAll(questions400);
-            newList.addAll(questions500);
-            newList.addAll(questions600);
-            newList.addAll(questions700);
-            newList.addAll(questions800);
-            newList.addAll(questions900);
             questions = newList;
 
             //сортувати по вмісту відповіді (текст НЕ ПУСТИЙ, тип відповіді UNKNOWN/PROBABLE)

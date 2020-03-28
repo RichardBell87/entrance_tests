@@ -43,8 +43,7 @@
                    value="English"
                    pattern="[E][n][g][l][i][s][h]"
                    required
-                   autocomplete="off"
-                   checked>
+                   autocomplete="off">
             <label class="form-check-label mt-0 mr-1 mb-0 ml-1"
                    for="inlineRadio1">English</label>
             <input class="form-check-input mt-0 mr-1 mb-0 ml-1"
@@ -54,7 +53,8 @@
                    value="Java"
                    pattern="[J][a][v][a]"
                    required
-                   autocomplete="off">
+                   autocomplete="off"
+                   checked>
             <label class="form-check-label mt-0 mr-1 mb-0 ml-1"
                    for="inlineRadio2">Java</label>
         </div>
